@@ -7,8 +7,9 @@ import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import Tech from "./Tech";
 import projImg from "../../assets/project.jpg";
+import TaskProj from "../../assets/TaskManager.jpg";
 import LittleTech from "./LittleTech";
-import reduxIcon from '../../assets/redux-logo-svgrepo-com.svg'
+import reduxIcon from "../../assets/redux-logo-svgrepo-com.svg";
 
 const Mid = () => {
   return (
@@ -27,6 +28,26 @@ const Mid = () => {
               <Tech img={htmlIcon} content={"html"} />
               <Tech img={cssIcon} content={"css"} />
               <Tech img={jsIcon} content={"javascript"} />
+              <Tech
+                img={"https://www.stefantopalovic.com/typescript-icon.svg"}
+                content={"typescript"}
+              />
+              <Tech
+                img={
+                  "https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png"
+                }
+                content={"Node JS"}
+              />
+              <Tech
+                img={"https://icon.icepanel.io/Technology/svg/MongoDB.svg"}
+                content={"MongoDB"}
+              />
+              <Tech
+                img={
+                  "https://icon.icepanel.io/Technology/png-shadow-512/Express.png"
+                }
+                content={"Express"}
+              />
               <Tech img={reactIcon} content={"react"} />
               <Tech img={tailwindIcon} content={"tailwind css"} />
             </div>
@@ -36,7 +57,9 @@ const Mid = () => {
       {/* */}
       <div className="w-full h-[25rem] mb-[5%] flex justify-center items-center ">
         <div className="w-[85%] h-[80%]  pl-[1%]">
-          <div className="w-full text-[2rem] text-white" id="About">About Me</div>
+          <div className="w-full text-[2rem] text-white" id="About">
+            About Me
+          </div>
           <div className="w-full h-[85%] text-2xl lg:text-3xl p-3 border-l border-t">
             <p>
               Hi, I’m Andy — a passionate learner and builder who loves turning
@@ -49,7 +72,7 @@ const Mid = () => {
       </div>
       {/*  */}
       <div className="w-full h-[46rem] flex justify-center items-center">
-        <div className="w-[85%] h-[100%] pl-[1%] ">
+        <div className="w-[85%] h-[100%] pl-[1%]">
           <div className="w-full text-[2rem] text-white">
             <h1 id="Projects">Projects</h1>
           </div>
@@ -77,11 +100,85 @@ const Mid = () => {
                 </div>
                 <div className="w-full h-[20%] lg:mt-[3%] flex justify-center">
                   <div className="w-[90%] h-full flex justify-center items-center gap-[5%]">
-                    <LittleTech img={reactIcon} content={'react'} bgColor={'#10203C'} />
-                    <LittleTech img={tailwindIcon} content={'tailwind'} bgColor={'#1C2D3F'} />
-                    <LittleTech img={reduxIcon} content={'redux'} bgColor={'#102242'} />
+                    <LittleTech
+                      img={reactIcon}
+                      content={"react"}
+                      bgColor={"#10203C"}
+                    />
+                    <LittleTech
+                      img={tailwindIcon}
+                      content={"tailwind"}
+                      bgColor={"#1C2D3F"}
+                    />
+                    <LittleTech
+                      img={reduxIcon}
+                      content={"redux"}
+                      bgColor={"#102242"}
+                    />
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full h-[50rem] flex justify-center items-center">
+        <div className="w-[85%] h-[100%] pl-[1%]">
+          <div className="w-full h-[90%] mt-[2%] flex justify-center">
+            <div className="w-[90%] lg:w-[75%] h-full border rounded-2xl">
+              <div className="w-full h-[60%] flex justify-center">
+                <div
+                  className="w-[90%] h-[85%] border bg-cover bg-center bg-origin-content mt-[3%]"
+                  style={{ backgroundImage: `url(${TaskProj})` }}
+                ></div>
+              </div>
+              <div className="w-full h-[40%]">
+                <div className="w-full">
+                  <h1 className="ml-[5%] lg:text-3xl text-blue-200">
+                    task manager
+                  </h1>
+                </div>
+                <div className="w-full h-[45%] flex justify-center mb-[2rem] lg:mb-0">
+                  <div className="w-[90%] h-full text-[14px] lg:text-[20.4px]">
+                    A full-stack Task Manager application that allows users to
+                    manage projects and tasks efficiently. Users can create
+                    projects, add tasks within them, and perform full CRUD
+                    operations. Built with React, Zustand, and Tailwind CSS on
+                    the frontend, and Node.js, Express, and MongoDB on the
+                    backend, following REST API principles. 
+                  </div>
+                </div>
+                <div className="w-full h-[20%] lg:mt-[5%] flex justify-center">
+                  <div className="w-[90%] h-full flex justify-center items-center gap-[5%]">
+                    <LittleTech
+                      img={reactIcon}
+                      content={"react"}
+                      bgColor={"#10203C"}
+                    />
+                    <LittleTech
+                      img={
+                        "https://icon.icepanel.io/Technology/png-shadow-512/Express.png"
+                      }
+                      content={"Express"}
+                      bgColor={"#e0dace"}
+                    />
+                    <LittleTech
+                      img={
+                        "https://icon.icepanel.io/Technology/svg/MongoDB.svg"
+                      }
+                      content={"mongoDB"}
+                      bgColor={"#946a22"}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex justify-center mt-[2vmin]">
+                <a href="https://nimble-youtiao-ee33c2.netlify.app/">
+                  <button className="w-[20vmin] p-1 text-[24px] text-amber-100 rounded-[8px] cursor-pointer bg-[#18b33913]">
+                    see site
+                  </button>
+                </a>
               </div>
             </div>
           </div>
